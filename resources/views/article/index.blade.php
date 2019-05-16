@@ -14,8 +14,12 @@
 </html>
 
 
+<nav class="navbar navbar-light bg-light">
+  <span class="navbar-brand mb-0 h1 bg">Cuisine's Blog</span>
+  <a href="http://127.0.0.1:8000/admin/article" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">管理文章</a>
 
-<h1> Cuisine's Blog </h1>
+</nav>
+
 <br>
 
 
@@ -36,14 +40,16 @@
 <br><br><br><br><br> -->
 
 
-<div class="card" >
+<a herf="/article/{{$article->id}}">
+ <div class="card" >
   <img src="{{$article->image}}" class="card-img-top" alt="">
   <div class="card-body">
     <h4 class="card-title font-weight-bold">{{$article -> title}}</h4>
     <p class="card-text">{{$article -> content}} </p>
     <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
   </div>
-</div>
+ </div>
+</a>
 
 <br><br><br>
 
